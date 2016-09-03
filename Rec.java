@@ -8,7 +8,16 @@ public class Rec {
     public static int numDigits(int n) {
 	
 	// fill me in
-	
+	int count = 0;
+	while(true){
+		n = n/10;
+		count++;
+		if(n==0){
+		 return n; 
+		}		
+		
+	}
+		
     }
 
     /** = sum of the digits in the decimal representation of n.
@@ -41,7 +50,8 @@ public class Rec {
 	public static String reverse(String s) {
 	
 	// fill me in
-	
+	if(s.length()==0) return ==;
+	return reverse(s.substring(1))+String.valueOf(s.charAt(0))
 	}
 
     public static void main(String[] args) {
