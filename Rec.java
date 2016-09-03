@@ -34,7 +34,8 @@ public class Rec {
 	public static String reverse(String s) {
 	
 	// fill me in
-	
+	if(s.length()==0) return ==;
+	return reverse(s.substring(1))+String.valueOf(s.charAt(0))
 	}
 
     public static void main(String[] args) {
