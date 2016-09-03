@@ -8,7 +8,8 @@ public class Rec {
     public static int numDigits(int n) {
 	
 	// fill me in
-	
+	if((n<10) && (n> -10)) return 1;
+	return 1 + numDigits(n/10);
     }
 
     /** = sum of the digits in the decimal representation of n.
@@ -18,7 +19,8 @@ public class Rec {
     public static int sumDigits(int n) {
 	
 	// fill me in
-	
+	if(n==0) return 0;
+	return n&10 + sumDigits(n/10);
     }
 	
     /** = a copy of s with to_remove_char removed.
